@@ -1,0 +1,101 @@
+html {
+	height: 100%;
+}
+
+body {
+	margin: 0px;
+	height: 100%;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.box {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.content {
+	height: 500%;
+	width: 100%;
+	position: absolute;
+	top: 0%;
+}
+
+.page {
+	height: 20%;
+	position: relative;
+	overflow: hidden;;
+}
+/*让page下的图片都绝对定位*/
+
+.page1 {
+	background-color: black;
+}
+
+.page2 {
+	background-color: white;
+}
+
+.page3 {
+	background-color: black;
+}
+
+.page4 {
+	background-color: white;
+}
+
+.page5 {
+	background-color: black;
+}
+/*动画效果*/
+@keyframes text-anim{
+	0%{}
+	50%{transform: scale(1.5);}
+	100%{}
+}
+/**其他**/	
+.arrow{
+	position: absolute;
+	width: 15%;
+	left: 40%;
+	bottom: 5%;
+	animation: move 3s linear both infinite;
+}
+.music{
+	position: absolute;
+	width: 15%;
+	right: 5%;
+	top: 5%;
+	animation: circle-anim 2s linear both infinite;
+}
+@keyframes circle-anim{
+	0%{}
+	100%{transform: rotate(360deg);}
+}
+@keyframes move{
+	0%{}
+	50%{bottom: 10%;}
+	100%{}
+}
+/*new zhongniu*/
+.page1-bac {
+	width: 100%;
+	height: 100%;
+}
+.showImg {
+	float: left;
+	width: 50%;
+	height: 24%;
+	margin: 6% 0;
+}
+.left {
+	transform: rotate(45deg);
+}
+.right {
+	transform: rotate(-45deg);
+}
